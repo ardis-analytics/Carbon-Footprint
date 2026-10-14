@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Analytics Prism</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#0d0d0d;
+}
+
+/* NAVBAR */
+
+.navbar{
+background:#000;
+padding:12px 0;
+box-shadow:0 2px 10px rgba(0,0,0,.3);
+}
+
+.navbar-brand{
+font-family:'Great Vibes',cursive;
+font-size:1.3rem;
+font-weight:600;
+letter-spacing:1px;
+color:white !important;
+}
+
+.nav-link{
+color:white !important;
+font-size:.9rem;
+white-space:nowrap;
+margin-left:10px;
+transition:.3s;
+}
+
+.nav-link:hover{
+color:#ffd166 !important;
+}
+
+/* TITLE */
+
+.site-title{
+font-family:'Cinzel',serif;
+font-size:3rem;
+text-align:center;
+margin:25px 0;
+background:linear-gradient(
+90deg,
+#ffd166,
+#ef476f,
+#118ab2,
+#06d6a0
+);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+/* BANNER */
+
+.banner{
+width:88%;
+margin:auto;
+margin-bottom:20px;
+}
+
+.banner img{
+width:100%;
+display:block;
+border-radius:18px;
+box-shadow:0 8px 25px rgba(0,0,0,.35);
+}
+
+/* MOVING TEXT */
+
+.ticker{
+overflow:hidden;
+white-space:nowrap;
+background:#111;
+padding:14px 0;
+border-top:1px solid #222;
+border-bottom:1px solid #222;
+}
+
+.ticker span{
+display:inline-block;
+padding-left:100%;
+
+font-size:1rem;
+font-weight:600;
+
+background:linear-gradient(
+90deg,
+#ffd166,
+#ef476f,
+#118ab2,
+#06d6a0
+);
+
+-webkit-background-clip:text;
+background-clip:text;
+color:transparent;
+
+animation:scroll 40s linear infinite;
+}
+
+@keyframes scroll{
+from{
+transform:translateX(0);
+}
+to{
+transform:translateX(-100%);
+}
+}
+
+/* INTRO */
+
+.intro{
+background:#f7f5f1;
+color:#222;
+padding:80px 8%;
+}
+
+.intro-container{
+max-width:1000px;
+margin:auto;
+text-align:center;
+}
+
+.hero-heading{
+font-family:'Great Vibes',cursive;
+font-size:3rem;
+font-weight:400;
+line-height:1.2;
+margin-bottom:10px;
+color:#111;
+}
+
+.portfolio-subtitle{
+font-size:1.1rem;
+font-weight:500;
+letter-spacing:1px;
+margin-bottom:35px;
+color:#555;
+}
+
+.intro p{
+max-width:850px;
+margin:0 auto 22px auto;
+font-size:1rem;
+line-height:1.9;
+}
+
+.contact-btn{
+display:inline-block;
+text-decoration:none;
+margin-top:15px;
+border:2px solid #333;
+background:none;
+padding:10px 30px;
+border-radius:30px;
+font-weight:500;
+transition:.3s;
+color:#111;
+}
+
+.contact-btn:hover{
+background:#111;
+color:white;
+  }
+
+/* FOOTER */
+
+footer{
+background:#000;
+color:white;
+text-align:center;
+padding:20px;
+font-size:.9rem;
+}
+
+/* MOBILE */
+
+@media(max-width:992px){
+
+.site-title{
+font-size:2.2rem;
+padding:0 15px;
+}
+
+.hero-heading{
+font-size:2.2rem;
+}
+
+.nav-link{
+margin-left:0;
+}
+
+.intro{
+padding:60px 7%;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+
+<div class="container-fluid px-4">
+
+<a class="navbar-brand">
+Sidra Riaz
+</a>
+
+<button
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#">
+<i class="bi bi-house-door"></i> Home
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="projects.html">
+<i class="bi bi-folder2-open"></i> Project Details
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="dashboards.html">
+<i class="bi bi-bar-chart-line"></i> Dashboards
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">
+<i class="bi bi-tools"></i> Skills
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">
+<i class="bi bi-award"></i> Certificates
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- TITLE -->
+
+<h1 class="site-title">
+The Analytics Prism
+</h1>
+
+<!-- BANNER -->
+
+<div class="banner">
+
+<img src="Screenshot%20(642).png" alt="Analytics Banner">
+
+</div>
+
+<!-- TICKER -->
+
+<div class="ticker">
+
+<span>
+Turning Chaotic Data Into Actionable Insights •
+Turning Chaotic Data Into Actionable Insights •
+Turning Chaotic Data Into Actionable Insights •
+Turning Chaotic Data Into Actionable Insights •
+Turning Chaotic Data Into Actionable Insights •
+</span>
+
+</div>
+
+<!-- INTRO -->
+
+<section class="intro">
+
+<div class="intro-container">
+
+<h2 class="hero-heading">
+Transforming Complexity into Clarity
+</h2>
+
+<div class="portfolio-subtitle">
+MY ANALYTICS PORTFOLIO
+</div>
+
+<p>
+I'm an aspiring Data Analyst focused on transforming complex datasets into clear, actionable insights. With growing expertise in Excel, SQL, Power BI, and data visualization, I enjoy uncovering patterns, analyzing trends, and communicating findings that support better decisions.
+</p>
+
+<p>
+This portfolio showcases my analytics projects, technical skills, and continuous learning journey. Each project reflects my commitment to developing practical business and analytical skills through real-world data exploration and storytelling.
+</p>
+
+<p>
+I'm currently building the experience needed to launch my career in analytics and contribute to data-driven teams that create measurable impact.
+</p>
+
+<a class="contact-btn" href="contacts.html">
+Contact
+</a>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 The Analytics Prism
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
